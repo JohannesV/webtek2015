@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<!-- Author: Marianne, Ellen, Johanne,  Johannes and Eirik
+Date: November 11, 2015
+Purpose: Design Guidelines
+Filename: p3_changes.html
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>P3 Project Changes</title>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1>P3 Project Changes</h1>
+				<h4>Marianne Kleveland, Ellen Wagnild-Antonsen, Johanne Parelius, Johannes Vassdal and Eirik Wist</h4>
+				<h5>November 11th, 2015</h5>
+
+				<nav>
+					<ul>
+						<li>
+							<a href="#dd">Document Details</a>
+						</li>
+						|
+						<li>
+							<a href="#cha1">Changes P1-P2</a>
+						</li>
+						|
+						<li>
+							<a href="#cha2">Changes P2-P3</a>
+						</li>
+						|
+						<li>
+							<a href="#plan">Updated Organizational Scheme</a>
+						</li>
+						|
+						<li>
+							<a href="#wdd">Final Work Division</a>
+						</li>
+					</ul>
+			</header>
+
+			<main>
+
+				<section>
+					<h3><a name="dd">Document Details</a></h3>
+					<p>
+						P3 Changes
+						<br />
+						<br />
+						Marianne Kleveland, Ellen Wagnild-Antonsen, Johanne Parelius, Johannes Vassdal and Eirik Wist
+						<br />
+						<br />
+						IT2805 November 11th 2015
+
+					</p>
+				</section>
+
+				<section>
+					<h3><a name="cha1">Changes from P1 to P2</a></h3>
+					<p>
+						<i>We have made some changes throughout the entire project. From phase one(Research P1) to phase two(Design, P2) we have made some changes to the content of the web site.</i>
+						<br />
+						<br />
+					</p>
+					<p>
+						<ul>
+							<li>
+								<p>
+								<b>Changed "Contact" to "Information":</b></br>
+								We have changed the name of the <i>contact</i> page to <i>information</i>. We chose to change the name of this page so that the user would know that there is more information to be found than solely contact information. In our opinion, this new title express more clearly the content within the page.
+								</p>
+							</li>
+							<li>
+								<p>
+								<b>Added opening hours:</b></br>
+								We have added opening hours to the information page. This is an important feature that we forgot to mention in the P1 part of the project. Opening hours is essential information that the customer would expect to see. This in order to plan the booking of an appointment, and to know when you should expect to be able to get in contact with the salon.
+								</p>
+							</li>
+							<li>
+								<p>
+								<b>Added slide show:</b></br>
+								In the design phase, P2, we set out to define more clearly how to execute our statement for the home page from phase P1; <i>“The main page is intended to catch the attention of potential customers (...)”</i>. In order to achieve this, we added a slide show to the home page in order to catch the attention of the users, as was the criteria from the start.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>Removed "Hair Salons":</b></br>
+									When we worked with the design of the page, we chose to get rid of the hair salon page. The reason for this is that we wanted to work with a high end, Trondheim-based salon in stead of a chain. There is no longer any need for a distinct page where you display different salons in a chain, because we are not working with a chain with several locations.
+									</p>
+							</li>
+							<li>
+								<p>
+									<b>Added gallery page:</b></br>
+									We have decided to add a gallery page. The gallery will be accessed from the navigation bar, and replace the <i>hair salons</i> site. A gallery page will let the hair salon show their work to their customers. In addition, a gallery page will hopefully make the web site more interesting for the customer, adding more visuality of the work done by the salon alongside the description of the different hairdressers specialities in the <i>hairdressers</i> view.
+								</p>
+							</li>
+
+						</ul>
+					</p>
+				</section>
+
+
+				<section>
+					<h3><a name="cha2">Changes from P2 to P3</a></h3>
+					<p>
+						<i>We encountered some challenges realizing the design defined in phase two(P2). This has resulted in some changes from our initial idea of which methods we should use for the coding. There has also been added some new features to the web site.</i>
+						<br />
+						<br />
+					</p>
+					<p>
+						<ul>
+
+							<li>
+								<p>
+								<b>Use mapbox instead of leaflet:</b></br>
+								In P2 we set out to implement a map function in the information page using leaflet. In coding the map function however, we ended up using mapbox instead of leaflet in order to implement the feature. This was mainly due to few and poor tutorials considering leaflet. Because neither leaflet or mapbox has been covered in the course, we were dependent of good tutorials in order to understand and use it. The js for the map function is located in the file <i>information.html</i>.
+								</p>
+							</li>
+							<li>
+								<p>
+								<b>Use of html forms:</b></br>
+								The booking page described in the project design, P2, was a very ambitious booking site with a vast amount of styling. We wanted to implement this type of booking page, but eventually came to the realization that we did not have the time to implement it. </br></br>Therefore, we had to come up with an alternative booking page, and we chose to use html forms for this. This decision was based on the fact that we have learned about this type of form during the course. In addition, html forms will be a good alternative for the booking page, because it gives us the opportunity to validate the information from the user in order to ensure that the user books an appointment right. The information will not be sent anywhere because of the fact that we do not have an actual client. We also do not have a system in place for processing the information collected by the form. Forms validation is not being handled with javascript, but with CSS and HTML5. The functions HTML5 provide was sufficient for our needs.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>Addition to navigational structure:</b></br>
+									We have added an extra layer to the navigation structure. On all pages, clicking the logo will lead the user back to the home page. This is a standard that is widely used in web page design, and we have chosen to implement this as it will be something that is easy to do, and because it will enhance the user experience for the users that expect it to be there. It will be a subtle feature that meet some user expectations and that does not disturb the users that chose not to use it.
+									</p>
+							</li>
+								<figure style="display: inline-block;">
+									<img src="../img/logo.png"  style="width:40%; display:block ;margin-left: auto;margin-right: auto;">
+								</figure>
+							<li>
+								<p>
+									<b>Changed logo:</b></br>
+									In order to give the web page a stronger identity, we have come up with a logo for the fictive hair salon. The logo is displayed above. It is a circle with black stroke. Inside the circle, the generic name of the hair salon “The Hair Company” is written. Wrapped around the lower inside of the circle, it says “Since 1986”, which we have set as the start-up year of the company. Above the company name, there is an image of scissors, which together with the name indicates that the company is a hair salon.
+								</p>
+							</li>
+
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3><a name="plan">Updated Organizational Scheme</a></h3>
+					<p>The javascript for leaflet is in the home.html file. The javascript for the slideshow is in the home.html file.
+
+						<br/>
+						<br/>
+						<strong>List of files and Folders:</strong>
+						<br/>
+						<ul>
+							<li>
+								home.html
+							</li>
+							<li>
+								booking.html
+							</li>
+							<li>
+								hairdressers.html
+							</li>
+							<li>
+								pricelist.html
+							</li>
+							<li>
+								hairsalons.html
+							</li>
+							<li>
+								information.html
+							</li>
+							<li>
+								gallery.html
+							</li>
+							<li>
+								images/
+								<ul>
+									<li>
+										alice.png
+									</li>
+									<li>
+										anette.png
+									</li>
+									<li>
+										background.jpg
+									</li>
+									<li>
+										booking.jpg
+									</li>
+									<li>
+										bride.jpg
+									</li>
+									<li>
+										fabian.png
+									</li>
+									<li>
+										img1.jpg
+									</li>
+									<li>
+										img10.jpg
+									</li>
+									<li>
+										img11.jpg
+									</li>
+									<li>
+										img12.jpg
+									</li>
+									<li>
+										img13.jpg
+									</li>
+									<li>
+										img14.jpg
+									</li>
+									<li>
+										img2.jpg
+									</li>
+									<li>
+										img3.jpg
+									</li>
+									<li>
+										img3.png
+									</li>
+									<li>
+										img4.jpg
+									</li>
+									<li>
+										img4.png
+									</li>
+									<li>
+										img5.jpg
+									</li>
+									<li>
+										img5.png
+									</li>
+									<li>
+										img6.jpg
+									</li>
+									<li>
+										img7.jpg
+									</li>
+									<li>
+										img8.jpg
+									</li>
+									<li>
+										img9.jpg
+									</li>
+									<li>
+										img_bride.jpg
+									</li>
+									<li>
+										logo.png
+									</li>
+									<li>
+										petter.png
+									</li>
+									<li>
+										prinsensgate.jpg
+									</li>
+									<li>
+										rightArrow.png
+									</li>
+									<li>
+										leftArrow.png
+									</li>
+
+								</ul>
+							</li>
+							<li>
+								scripts/
+								<ul>
+									<li>
+										dropdown.js
+									</li>
+									<li>
+										cookies.js
+									</li>
+									<li>
+										bookingReceipt.js
+									</li>
+								</ul>
+							</li>
+							<li>
+								style.css
+							</li>
+
+					</p>
+				</section>
+
+				<section>
+					<h3><a name="wdd">Final Work Division</a></h3>
+					<p>
+
+						<table border="1" style="margin-bottom: 50px; border-collapse: collapse;">
+							<thead>
+								<tr style="font-weight: bold;">
+									<th>Filename</th>
+									<th>Description</th>
+									<th>In charge</th>
+									<th>Deadline</th>
+								</tr>
+								<tr>
+									<th>home.html</th>
+									<th>The mainpage </th>
+									<th>Marianne</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>hairdressers.html</th>
+									<th>Info about the hairdressers who work at the hair salon.</th>
+									<th>Ellen</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>booking.html</th>
+									<th>The page where the users can book an apointment at a hair salon.</th>
+									<th>Johanne</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>pricelist.html</th>
+									<th>A list of the prices at the salons.</th>
+									<th>Johannes</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>information.html</th>
+									<th>Map who shows the location of the salons and contact information.</th>
+									<th>Marianne</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>gallery.html</th>
+									<th>Gallery with images.</th>
+									<th>Eirik</th>
+									<th>31.10</th>
+								</tr>
+								<tr>
+									<th>---images</th>
+									<th>The images we will use on the site</th>
+									<th>Ellen</th>
+									<th>05.11</th>
+								</tr>
+								<tr>
+									<th>hairdresser.js</th>
+									<th>JavaScript selector of hairdresser </th>
+									<th>Johanne</th>
+									<th>07.11</th>
+								</tr>
+								<tr>
+									<th>cookies.js</th>
+									<th>JavaScript cookies</th>
+									<th>Johannes</th>
+									<th>07.11</th>
+								</tr>
+								<tr>
+									<th>bookingReceipt.js</th>
+									<th>JavaScript printing the confirmation for booking</th>
+									<th>Marianne</th>
+									<th>07.11</th>
+								</tr>
+								<tr>
+									<th>style.css</th>
+									<th>CSS stylesheet</th>
+									<th>Eirik</th>
+									<th>13.11</th>
+								</tr>
+								<tr>
+									<th>Final controls</th>
+									<th>Controls to check that the site is working as intended with no bugs etc.</th>
+									<th>All</th>
+									<th>16.11</th>
+								</tr>
+						</table>
+
+					</p>
+				</section>
+
+			</main>
+
+			<footer>
+				<p>
+					Marianne, Ellen, Johanne, Johannes and Eirik
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

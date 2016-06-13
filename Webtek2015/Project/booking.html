@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Author: Marianne, Ellen, Johanne,  Johannes and Eirik
+Date: Novermber 5, 2015
+Purpose: Booking page
+Filename: booking.html
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Booking</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+		<script src="scripts/bookingReceipt.js"></script>
+	</head>
+	<body>
+		<div class="mainPart">
+			<header>
+				<a href="home.html"><img id="logo" src="img/logo.png"></a>
+			</header>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li class="one" ><a href="home.html">Home</a></li>
+						<li class="two" style="border-bottom: 3px solid rgb(183,113,27);"><a href="booking.html">Booking</a></li>
+						<li class="three"><a href="hairdressers.html">Hairdressers</a></li>
+						<li class="four"><a href="pricelist.html">Price List</a></li>
+						<li class="five"><a href="gallery.html">Gallery</a></li>
+						<li class="six"><a href="information.html">Information</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="main form">
+				<form method="post" >
+					<fieldset>
+						<legend>Book an appointment:</legend>
+						<label><span class="left">Name:<p class="required">*</p></span> <input type="text" name="name" size="30" maxlength="100" id ="nameField" required/></label><br />
+
+						<label><span class="left">Phone number:<p class="required">*</p></span> <input type="text" name="phone" size="30" maxlength="100" id="phoneField" required /></label><br />
+
+						<label><span class="left">Email: </span><input type="text" name="email" size="30" maxlength="100"  /></label><br />
+
+						<label><span class="left"> Hairdresser: </span>
+							<select name="hairdresser" id="hairdresser">
+								<option value="1">Any </option>
+								<option value="2">Anette S. Fjellfiol </option>
+								<option value="3">Petter Fuglevikke </option>
+								<option value="4">Alice Agnete Rosengren </option>
+								<option value="5">Fabian Bekkeblom </option>
+							</select>
+						</label><br/>
+						<label><span class="left">Cut:<p class="required">*</p></span>
+						<select name="cut">
+							<option value="1">Woman's haircut</option>
+							<option value="2">Man's haircut</option>
+							<option value="3">Children's haircut</option>
+							<option value="4">Bang's haircut</option>
+							<option value="5">Trainee haircut</option>
+						</select>
+						</label><br />
+
+						<label><span class="left">Color:</span>
+						<select name="color">
+							<option value="1">None</option>
+							<option value="2">Color short hair</option>
+							<option value="3">Color long hair</option>
+							<option value="4">Bleaching</option>
+							<option value="5">Olaplex Colouring</option>
+							<option value="6">Minicolor</option>
+							<option value="7">Full Head Highlight</option>
+						</select>
+						</label><br />
+
+						<label><span class="left">Styling: <p class="required">*</p></span>
+						<select name="style">
+							<option value="1">Styling half-hour</option>
+							<option value="2">Styling one hour</option>
+							<option value="3">Wash and blowdry</option>
+							<option value="4">Eyelash coloring</option>
+							<option value="5">Eyebrow coloring</option>
+							<option value="6">Eyebrow styling</option>
+							<option value="7">Permanent Curling</option>
+							<option value="8">Straight and Shine</option>
+							<option value="9">Hair treatment</option>
+							<option value="10">Hair treatment with steam</option>
+							<option value="11">Make-up</option>
+							<option value="12">Olaplex cure</option>
+						</select>
+						</label><br />
+
+						<label><span class="left">Date: <p class="required">*</p></span></label>
+						<input type="date" name="date" id="dateField" required/><br /><br />
+
+						<label><span class="left">Time:<p class="required">*</p></span></label>
+						<input type="time" name="time" id="timeField" required></br></br>
+
+
+						<label><span class="left">Requests or comments: </span></label><div id="textcontainer"><textarea rows="6" cols="30" name="comments"></textarea></div><br />
+
+						<label><button type="submit" name="submit" id="submitButton">Book this appointment!</button>
+					</fieldset>
+				</form>
+			</div>
+
+</div>
+			<footer>
+			<table>
+			<thead>
+			<tr>
+				<th>About:</th>
+				<th>Address:</th>
+				<th>Contact us:</th>
+			</tr>
+			</thead>
+			<tbody id="tablebody">
+			<tr>
+				<td>The Hair Salon</td>
+				<td>Prinsens gate 194,</td>
+				<td>Tel: 73 74 75 74</td>
+
+			</tr>
+			<tr>
+				<td><a href="hairdressers.html"> Our Employees </a></td>
+				<td>7039 Trondheim</td>
+				<td>E-mail: <a href="mailto:someone@example.com">contact@hairdresser.no</a></td>
+			</tr>
+
+			</tbody>
+			</table>
+			</br>
+			</br>
+			<hr></hr>
+			<p id="footerinfo">© Webtek2015 Inc.
+			2015
+			All Rights Reserved
+			Terms of Service
+			Privacy Policy
+			Site Map
+			</p>
+			</br>
+			</footer>
+	</body>
+</html>

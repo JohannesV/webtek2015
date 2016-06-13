@@ -1,0 +1,371 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: url(img/background.jpg) no-repeat center center fixed;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.mainPart {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  overflow: hidden;
+}
+.menu {
+  padding: 1%;
+  padding-bottom: 1%;
+}
+.navElement {}
+output {
+  font-family: "Open Sans", 400;
+  font-size: 80%;
+  font-weight: bold;
+}
+#logo {
+  height: 12%;
+  width: 12%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2%;
+}
+#gallery {
+  margin-left: auto;
+  margin-right: auto;
+}
+#img_gallery {
+  display: inline-block;
+  height: 1%;
+  width: 1%;
+}
+#anette-img {
+  height: 15%;
+  width: 15%;
+  display: inline-block;
+  float: left;
+  margin-right: 7%;
+  margin-bottom: 7%;
+}
+#petter-img {
+  height: 15%;
+  width: 15%;
+  display: inline-block;
+  float: left;
+  margin-right: 7%;
+	margin-bottom: 7%;
+}
+#alice-img {
+  height: 15%;
+  width: 15%;
+  display: inline-block;
+  float: left;
+  margin-right: 7%;
+	margin-bottom: 7%;
+}
+#fabian-img {
+  height: 15%;
+  width: 15%;
+  display: inline-block;
+  float: left;
+  margin-right: 7%;
+
+}
+.pricelist-img {
+  height: 70%;
+  width: 80%;
+  margin-top: 5%;
+}
+nav {
+  font-family: "Roboto", 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+p {
+  font-family: "Open Sans", 400;
+  font-size: 80%;
+}
+h3 {
+  font-family: "Roboto", 700;
+}
+li {
+  list-style: none;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: inline;
+  font-size: 16pt;
+}
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+ul {
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.pricelist li {
+  display: list-item;
+}
+ul.pricelist li span.price {
+  text-align: right;
+  float: right;
+}
+ul.opening-hours li {
+  display: list-item;
+}
+ul.contact li {
+  display: list-item;
+}
+div.list-column {
+  float: left;
+  width: 60%;
+  overflow: hidden;
+}
+div.image-column {
+  float: right;
+  width: 40%;
+}
+div.image-column * {
+  margin-bottom: 20px;
+}
+footer {
+  font-family: "Roboto", 300;
+  font-size: 80%;
+  background-color: rgb(81, 83, 92);
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+footer table {
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  color: #d9d9d9;
+  width: 60%;
+  height: 1px;
+}
+footer p {
+  text-align: center;
+}
+.book {
+  float: right;
+  color: black;
+  border: none;
+  background-color: #BBC1D4;
+  font-size: 11pt;
+  font-weight: bold;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+.book:hover {
+  background-color: #E0E7FB;
+  border: 1px solid black;
+}
+.main-text {
+  font-size: 16pt;
+  margin-top: 50%;
+}
+.one:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.two:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.three:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.four:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.five:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.six:hover {
+  border-bottom: 3px solid rgb(183, 113, 27);
+}
+.one {
+  border-bottom: 3px solid black;
+}
+.two {
+  border-bottom: 3px solid black;
+  margin-left: -10px;
+}
+.three {
+  border-bottom: 3px solid black;
+  margin-left: -10px;
+}
+.four {
+  border-bottom: 3px solid black;
+  margin-left: -10px;
+}
+.five {
+  border-bottom: 3px solid black;
+  margin-left: -10px;
+}
+.six {
+  border-bottom: 3px solid black;
+  margin-left: -10px;
+}
+.required {
+  display: inline;
+  color: red;
+}
+div.hairdresser1 , div.hairdresser2 , div.hairdresser3 , div.hairdresser4  {
+
+	overflow: hidden;
+}
+div.gallery{
+	width: 610px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.form fieldset {
+width: 90%;
+height: 30em;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2em;
+line-height: 1.7em;
+position: relative;
+}
+div.form fieldset span.left{
+  position: absolute;
+  left:20%;
+}
+div.form fieldset input, div.form fieldset select{
+position: absolute;
+right: 20%;
+}
+
+div.form fieldset button{
+position: absolute;
+bottom: 1em;
+left: 20%;
+}
+div.form fieldset div#textcontainer{
+position: absolute;
+right: 20%;
+bottom: 4em;
+display: inline;
+}
+div.form fieldset div#textcontainer textarea{
+width: 100%;
+
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+div.form fieldset :invalid{
+  border: solid red 2px;
+}
+
+#slideshow {
+  margin-left: 10%;
+  display: block;
+  width: 80%;
+}
+
+#imgs img {
+  width: 47%;
+  height: 52%;
+  position: absolute;
+  transition: 1s;
+  visibility: hidden;
+}
+
+#navSlide {
+  display: block;
+  width: 47%;
+  height: 52%;
+  position: absolute;
+}
+
+#navCircles {
+  display: block;
+  width: 100%;
+  height: 20%;
+}
+
+#circles {
+  display: block;
+  width: 10%;
+  height: 15%;
+  margin-right: 5%;
+  margin-top: 2%;
+  float: right;
+}
+
+#circles ul {
+  margin: 0;
+  float: right;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#circles li {
+  list-style: none;
+  display: block;
+  background-color: black;
+  width: 15%;
+  height: 100%;
+  margin-left: 5%;
+  float: left;
+  visibility: hidden;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#navButtons {
+  display: block;
+  width: 100%;
+  height: 20%;
+  margin-top: 10%;
+}
+
+#left {
+  width: 8%;
+  height: 100%;
+  float: left;
+  margin-left: 3%;
+  opacity: 0.5;
+}
+
+#left:hover {
+  opacity: 0.8;
+}
+
+#right {
+  width: 8%;
+  height: 100%;
+  float: right;
+  margin-right: 3%;
+  opacity: 0.5;
+}
+
+#right:hover {
+  opacity: 0.8;
+}

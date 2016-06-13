@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- Author: Marianne, Ellen, Johanne,  Johannes and Eirik
+Date: Novermber 5, 2015
+Purpose: Home page
+Filename: home.html
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+		<script src='scripts/cookies.js'></script>
+
+		<script type="text/javascript">
+		var nrImg = 5;
+		var sec = 6;
+
+		function Load() {
+			nrShown = 0;
+			vect = new Array(nrImg);
+			vect[0] = document.getElementById('img1');
+			vect[0].style.visibility = 'visible';
+
+			document.getElementById('s' + 0).style.visibility = "visible";
+
+			for (var i = 1; i < nrImg; i++){
+				vect[i] = document.getElementById('img' + (i+1));
+				document.getElementById('s' + i).style.visibility = "visible";
+			}
+			document.getElementById('s' + 0).style.backgroundColor = "white";
+
+			myTime = setInterval(timer, sec*1000);
+		}
+
+		function timer() {
+			nrShown++;
+			if (nrShown == nrImg) {
+				nrShown = 0;
+			}
+			effect();
+		}
+
+		function next() {
+			nrShown++;
+			if (nrShown == nrImg) {
+				nrShown = 0;
+			}
+			effect();
+
+			clearInterval(myTime);
+			myTime = setInterval(timer, sec*1000);
+		}
+
+		function previous() {
+			nrShown--;
+			if (nrShown == -1) {
+				nrShown = nrImg - 1;
+			}
+			effect();
+
+			clearInterval(myTime);
+			myTime = setInterval(timer, sec*1000);
+		}
+
+		function effect() {
+			for (var i = 0; i < nrImg; i++) {
+				vect[i].style.opacity = "0";
+				vect[i].style.visibility = "hidden";
+
+				document.getElementById('s' + i).style.backgroundColor = "black";
+			}
+			vect[nrShown].style.opacity = "1";
+			vect[nrShown].style.visibility = "visible";
+			document.getElementById('s' + nrShown).style.backgroundColor = "white";
+		}
+
+	</script>
+
+	</head>
+	<body onload="Load()">
+		<div class="mainPart">
+			<header>
+				<a href="home.html"><img id="logo" src="img/logo.png"></a>
+			</header>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li class="one" style="border-bottom: 3px solid rgb(183,113,27);"><a href="home.html">Home</a></li>
+						<li class="two"><a href="booking.html">Booking</a></li>
+						<li class="three"><a href="hairdressers.html">Hairdressers</a></li>
+						<li class="four"><a href="pricelist.html">Price List</a></li>
+						<li class="five"><a href="gallery.html">Gallery</a></li>
+						<li class="six"><a href="information.html">Information</a></li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<div class="main">
+				
+					<div id="slideshow">
+						<div id="imgs">
+							<img id="img1" src="img/img1.jpg" />
+							<img id="img2" src="img/img2.jpg" />
+							<img id="img3" src="img/img3.jpg" />
+							<img id="img4" src="img/img4.jpg" />
+							<img id="img5" src="img/img5.jpg" />
+						</div>
+						<div id="navSlide">
+							<div id="navCircles">
+								<div id="circles">
+									<ul>
+										<li id="s0"></li>
+										<li id="s1"></li>
+										<li id="s2"></li>
+										<li id="s3"></li>
+										<li id="s4"></li>
+									</ul>
+								</div>
+							</div>
+							<div id="navButtons">
+								<img id="left" src="img/leftArrow.png" onclick="previous()" />
+								<img id="right" src="img/rightArrow.png" onclick="next()" />
+						</div>
+					</div>
+				</div>
+				<br>
+
+				<section class="main-text">
+					<output id="nameOutput">We dont have your name right now!</output>
+					<p>
+					Lorem ipsum dolor sit amet, ei offendit accusata patrioque eam. Et unum iracundia has. Vim te sonet aliquam pertinacia, sea percipit vituperatoribus et. Eu natum alterum oportere est, ornatus dolorum complectitur cu est, legere nominati consequuntur vis ex. Ei nam dictas nominati.
+					<br><br>
+					Has dicam facete quodsi id, augue utinam vix eu. Pro aperiam nonumes eu, id reque nostrud iuvaret has. Cu sea tation graeco iudicabit. Vis at dicta recteque interpretaris. Diam accusata te ius, paulo ignota repudiandae ius id.
+					<br><br>
+					Ius te natum atomorum honestatis, porro sanctus cu vis, nostro laboramus vulputate ut quo. Vim ad duis mediocrem. Sit at autem choro eirmod, ornatus oportere mel ei. Ius ea persius mentitum honestatis, ut impedit lucilius mei. Cu eos facer errem, has et prima zril impedit. Wisi blandit pro an, vim in antiopam scribentur. Iisque indoctum necessitatibus eos cu, vis autem legere tamquam at.
+					<br><br>
+					Ferri lucilius ad ius, ut sed probo etiam. An tation postea nec. Ad impetus utroque pri. Est mucius invenire erroribus ne, ad everti appetere pertinacia cum. Id sit animal inciderint. Modo nonumy nonumes in mel.
+					<br><br>
+					Vis purto corpora efficiendi id. Aeterno laoreet voluptatum duo ut, vidit vitae aliquip nam ne, eum wisi appareat perfecto an. Cibo ubique cu nam. Nam at causae voluptaria, ne usu idque philosophia, wisi natum eos ei.
+					</p>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<table>
+				<thead>
+					<tr>
+						<th>About:</th>
+						<th>Address:</th>
+						<th>Contact us:</th>
+					</tr>
+				</thead>
+				<tbody id="tablebody">
+					<tr>
+						<td>The Hair Salon</td>
+						<td>Prinsens gate 194,</td>
+						<td>Tel: 73 74 75 74</td>
+
+					</tr>
+					<tr>
+						<td><a href="hairdressers.html"> Our Employees </a></td>
+						<td>7039 Trondheim</td>
+						<td>E-mail: <a href="mailto:someone@example.com">contact@hairdresser.no</a></td>
+					</tr>
+
+				</tbody>
+			</table>
+			</br>
+			</br>
+			<hr></hr>
+			<p id="footerinfo">© Webtek2015 Inc.
+			2015
+			All Rights Reserved
+			Terms of Service
+			Privacy Policy
+			Site Map
+			</p>
+			</br>
+		</footer>
+	</body>
+</html>

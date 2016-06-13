@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Author: Marianne, Ellen, Johanne,  Johannes and Eirik
+Date: Novermber 5, 2015
+Purpose: Information page
+Filename: information.html
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Information </title>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="sript/map.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' / <script src='http://org.ntnu.no/webtek2015/project/scripts/leaflet.js'>
+
+	</script>
+
+</head>
+
+<body>
+	<div class="mainPart">
+		<header>
+			<a href="home.html">
+				<img id="logo" src="img/logo.png">
+			</a>
+		</header>
+
+		<div class="menu">
+			<nav>
+				<ul>
+					<li class="one"><a href="home.html">Home</a></li>
+					<li class="two"><a href="booking.html">Booking</a></li>
+					<li class="three"><a href="hairdressers.html">Hairdressers</a></li>
+					<li class="four"><a href="pricelist.html">Price List</a></li>
+					<li class="five"><a href="gallery.html">Gallery</a></li>
+					<li class="six" style="border-bottom: 3px solid rgb(183,113,27);"><a href="information.html">Information</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="main">
+			<div class="list-column">
+				<ul class="opening-hours">
+					<li class="day-time">Monday: 08:00-18:00</li>
+					<li class="day-time">Tuesday: 08:00-18:00</li>
+					<li class="day-time">Wednesday: 08:00-18:00</li>
+					<li class="day-time">Thusday: 08:00-18:00</li>
+					<li class="day-time">Friday: 08:00-18:00</li>
+					<li class="day-time">Saturday: 10:00-15:00</li>
+				</ul>
+				<ul class="contact">
+					<li class="contact-info">Prinsens Gate 194, 7039 Trondheim</li>
+					<li class="contact-info">Tel: 73 74 75 74</li>
+					<li class="contact-info">E-mail: <a href="mailto:someone@example.com">contact@hairdresser.no</a></li>
+				</ul>
+
+			</div>
+
+			<div class="image-column">
+				<img src="img/prinsensgate.jpg" alt="Placeholder image" style="width:400px;" />
+
+				<div id="map" style="height:300px;width:400px">
+
+
+				</div>
+			</div>
+
+
+			<script>
+			L.mapbox.accessToken = 'pk.eyJ1Ijoiam9oYW5uZXN2IiwiYSI6ImNpZ3RqeGNjcTA3eGd0cGtuamI0a2p3djQifQ.rJq12atzxq3kpz4bxdpPnQ';
+		  var map = L.mapbox.map('map', 'johannesv.cigtjxaw707x8u8m1dtp7z1fp')
+		    .setView([63.429063, 10.392683], 13);
+		  L.mapbox.featureLayer({
+
+		    type: 'Feature',
+		    geometry: {
+		      type: 'Point',
+		      //Motsatt rekkefølge i forhold til setView over
+		      coordinates: [
+		        10.392683,
+		        63.429063
+		      ]
+		    },
+		    properties: {
+		      title: 'The hair company',
+		      description: 'Our place',
+
+		      'marker-size': 'large',
+		      'marker-color': '#B7711B',
+		      'marker-symbol': 'hairdresser'
+		    }
+		  }).addTo(map);
+			</script>
+
+		</div>
+	</div>
+
+
+	<footer>
+		<table>
+			<thead>
+				<tr>
+					<th>About:</th>
+					<th>Address:</th>
+					<th>Contact us:</th>
+				</tr>
+			</thead>
+			<tbody id="tablebody">
+				<tr>
+					<td>The Hair Salon</td>
+					<td>Prinsens gate 194,</td>
+					<td>Tel: 73 74 75 74</td>
+
+				</tr>
+				<tr>
+					<td><a href="hairdressers.html"> Our Employees </a></td>
+					<td>7039 Trondheim</td>
+					<td>E-mail: <a href="mailto:someone@example.com">contact@hairdresser.no</a></td>
+				</tr>
+
+			</tbody>
+		</table>
+		</br>
+		</br>
+		<hr></hr>
+		<p id="footerinfo">© Webtek2015 Inc. 2015 All Rights Reserved Terms of Service Privacy Policy Site Map
+		</p>
+		</br>
+	</footer>
+</body>
+
+</html>
